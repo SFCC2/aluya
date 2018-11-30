@@ -24,6 +24,9 @@ public class Conexion {
                             // aqui se contecta
      			  } catch (SQLException e) {
 			     throw new SQLException(e);
+                             
+                             
+                             
 			  }
 
 				
