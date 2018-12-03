@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ListaPersona</servlet-name>
+        <servlet-class>findAll.ListaPersona</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AgregarPersona</servlet-name>
+        <servlet-class>findAll.AgregarPersona</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListaEmpresa</servlet-name>
+        <servlet-class>findAll.ListaEmpresa</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditarPersona</servlet-name>
+        <servlet-class>controlador.EditarPersona</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListaPersona</servlet-name>
+        <url-pattern>/ListaPersona.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AgregarPersona</servlet-name>
+        <url-pattern>/AgregarPersona.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HoliMundi</servlet-name>
+        <url-pattern>/HoliMundi</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarPersona</servlet-name>
+        <url-pattern>/edit.html</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
